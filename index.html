@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+            integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <style>
+            form {
+                padding: 5rem;
+                display: grid;
+                gap: 1rem;
+                text-align: center;
+                width: 400px;
+                margin: 0 auto;
+            }
+            input{
+                text-align: center;
+                width: 250px;
+                border: 1rem solid black;
+            }
+           
+            h2 {
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+        <title>Guesser Game</title>
+    </head>
+    <body>
+        <h2>Guessing Game</h2>
+        <form>
+
+            <input type="number" class="lb" minlength="1" placeholder="Enter lower Bound" required />
+            <input type="number" class="lu" minlength="1" placeholder="Enter Upper Bound" required />
+            <input type="submit" value="Start Game" />
+        </form>
+        <script src="javascript/script.js"></script>
+    </body>
+</html>
